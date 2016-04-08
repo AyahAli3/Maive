@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="36">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="35">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="36" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="39">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="20" width="430" height="44"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="1211" destination="38" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="40" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="141"/>
+        </scene>
+        <scene sceneID="41">
+            <objects>
+                <viewController id="38" sceneMemberID="viewController" customClass="LoginController" storyboardIdentifier="login" title="Login">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="33"/>
+                        <viewControllerLayoutGuide type="bottom" id="34"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="43">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="69" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Password">
+                                <rect key="frame" x="71" y="369" width="233" height="30"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" keyboardKey="YES"/>
+                                </accessibility>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="70" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="71" y="443" width="233" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.96470588235294119" green="1" blue="0.92549019607843142" alpha="1"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnLogin_TouchUpInside:" destination="38" id="364" eventType="touchUpInside"/>
+                                    <segue id="1103" destination="57" kind="modal"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="71" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="71" y="499" width="233" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="1173" destination="50" kind="push"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="371" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Email">
+                                <rect key="frame" x="71" y="319" width="234" height="30"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="744" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="ProfileImage">
+                                <rect key="frame" x="20" y="14" width="335" height="325"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Maive" lineBreakMode="tailTruncation" minimumFontSize="10" id="745" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
+                                <rect key="frame" x="72" y="238" width="231" height="73"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="62"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.95294117647058818" green="0.611764705882353" blue="0.070588235294117646" alpha="1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="42"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="txtPassword" destination="69" id="name-outlet-69"/>
+                        <outlet property="btnLogin" destination="70" id="name-outlet-70"/>
+                        <outlet property="btnSignUp" destination="71" id="name-outlet-71"/>
+                        <outlet property="txtEmail1" destination="371" id="name-outlet-371"/>
+                        <outlet property="Maive" destination="745" id="name-outlet-745"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="130"/>
+        </scene>
+        <scene sceneID="49">
+            <objects>
+                <viewController id="50" sceneMemberID="viewController" customClass="SignUpController" storyboardIdentifier="signin" title="SignUp">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="47"/>
+                        <viewControllerLayoutGuide type="bottom" id="48"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="51">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.95294117647058818" green="0.611764705882353" blue="0.070588235294117646" alpha="1"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="193" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="First Name">
+                                <rect key="frame" x="56" y="259" width="263" height="30"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="194" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Last Name">
+                                <rect key="frame" x="56" y="320" width="263" height="30"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="195" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Email">
+                                <rect key="frame" x="56" y="385" width="263" height="30"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="196" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Password" borderStyle="roundedRect">
+                                <rect key="frame" x="56" y="446" width="263" height="30"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="197" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Confirm Password">
+                                <rect key="frame" x="56" y="509" width="263" height="30"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="198" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="56" y="576" width="260" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <state key="normal" title="CREATE ACCOUNT">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnCreateAccount_TouchUpInside:" destination="50" id="333" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="746" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="ProfileImage">
+                                <rect key="frame" x="61" y="19" width="258" height="232"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Maive" lineBreakMode="tailTruncation" minimumFontSize="10" id="747" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
+                                <rect key="frame" x="72" y="170" width="231" height="73"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="50"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="txtFirstName" destination="193" id="name-outlet-193"/>
+                        <outlet property="txtLastName" destination="194" id="name-outlet-194"/>
+                        <outlet property="txtEmail" destination="195" id="name-outlet-195"/>
+                        <outlet property="txtPassword" destination="196" id="name-outlet-196"/>
+                        <outlet property="txtConfirm" destination="197" id="name-outlet-197"/>
+                        <outlet property="btnCreateAccount" destination="198" id="name-outlet-198"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="215"/>
+        </scene>
+        <scene sceneID="56">
+            <objects>
+                <viewController id="57" sceneMemberID="viewController" customClass="ProfileController" storyboardIdentifier="home">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="54"/>
+                        <viewControllerLayoutGuide type="bottom" id="55"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="58">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="&quot;Welcome, &quot;" lineBreakMode="tailTruncation" minimumFontSize="10" id="199" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="92" y="97" width="264" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Italic" family="Baskerville" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="404" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="ProfileImage">
+                                <rect key="frame" x="18" y="87" width="63" height="55"/>
+                                <accessibility key="accessibilityConfiguration" label="Upload Profile Picture "/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="412" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="24" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Personal Profile" id="413"/>
+                                </items>
+                                <color key="barTintColor" colorSpace="calibratedRGB" red="0.95294117647058818" green="0.611764705882353" blue="0.070588235294117646" alpha="1"/>
+                                <accessibility key="accessibilityConfiguration" label="lblProfile"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="26"/>
+                                    <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                    <color key="textShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </textAttributes>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Following" lineBreakMode="tailTruncation" minimumFontSize="10" id="416" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" fixedFrame="YES">
+                                <rect key="frame" x="-14" y="215" width="200" height="35"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.93333333333333335" green="0.54117647058823526" blue="0.066666666666666666" alpha="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" staticText="YES"/>
+                                </accessibility>
+                            </label>
+                            <tabBar contentMode="scaleToFill" id="421" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem id="422" title="HOME"/>
+                                    <tabBarItem key="tabBarItem" title="SEARCH" id="424" translatesAutoresizingMaskIntoConstraints="NO"/>
+                                    <tabBarItem key="tabBarItem" title="POST" id="425" translatesAutoresizingMaskIntoConstraints="NO"/>
+                                    <tabBarItem key="tabBarItem" title="NOTIFICATIONS" id="426" translatesAutoresizingMaskIntoConstraints="NO"/>
+                                    <tabBarItem id="423" title="PROFILE" tag="1" image="user_menu_filled-25.png"/>
+                                </items>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </tabBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Followers" lineBreakMode="tailTruncation" minimumFontSize="10" id="436" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center">
+                                <rect key="frame" x="185" y="215" width="203" height="35"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.93333333333333335" green="0.54117647058823526" blue="0.066666666666666666" alpha="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="550" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="29" y="157" width="317" height="39"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.95294117647058818" green="0.611764705882353" blue="0.070588235294117646" alpha="1"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <state key="normal" title="Edit Profile">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="659" destination="600" kind="push"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="lblWelcome" destination="199" id="name-outlet-199"/>
+                        <outlet property="Profile" destination="412" id="name-outlet-412"/>
+                        <outlet property="lblFollowing" destination="416" id="name-outlet-416"/>
+                        <outlet property="lblFollowers" destination="436" id="name-outlet-436"/>
+                        <outlet property="imgProfile" destination="404" id="name-outlet-404"/>
+                        <outlet property="btnEditProfile" destination="550" id="name-outlet-550"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="59" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="506"/>
+        </scene>
+        <scene sceneID="515">
+            <objects>
+                <tableViewController id="516" sceneMemberID="viewController" customClass="FollowController" storyboardIdentifier="follow">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="517">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="520" rowHeight="44" reuseIdentifier="TableCell">
+                                <rect key="frame" x="0.0" y="66" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="520" id="521">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="516" id="518"/>
+                            <outlet property="delegate" destination="516" id="519"/>
+                        </connections>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="713" key="tableHeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <segments>
+                                <segment title="Following"/>
+                                <segment title="Followers"/>
+                            </segments>
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                            <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        </segmentedControl>
+                    </tableView>
+                    <connections>
+                        <outlet property="FollowController" destination="713" id="name-outlet-713"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="522" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-128" y="919"/>
+        </scene>
+        <scene sceneID="599">
+            <objects>
+                <viewController id="600" sceneMemberID="viewController" customClass="EditProfileController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="597"/>
+                        <viewControllerLayoutGuide type="bottom" id="598"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="601">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="618" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="317" width="335" height="44"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.95294117647058818" green="0.611764705882353" blue="0.070588235294117646" alpha="1"/>
+                                <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="18"/>
+                                <state key="normal" title="Upload Profile Picture">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnTakePhoto_TouchUpInside:" destination="600" id="667" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="686" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="86" width="335" height="232"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.95294117647058818" green="0.611764705882353" blue="0.070588235294117646" alpha="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" id="551" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" tag="5" placeholder="Tell us about youself!" clearButtonMode="whileEditing">
+                                <rect key="frame" x="17" y="394" width="342" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="yes" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="txtBio_EditingDidEnd:" destination="57" id="566" eventType="editingDidEndOnExit"/>
+                                </connections>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="1"/>
+                                <accessibility key="accessibilityConfiguration" label="lblBio">
+                                    <accessibilityTraits key="traits" none="YES" summaryElement="YES"/>
+                                </accessibility>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="FirstName:" lineBreakMode="tailTruncation" minimumFontSize="10" id="605" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="17" y="486" width="104" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Last Name:" lineBreakMode="tailTruncation" minimumFontSize="10" id="606" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="192" y="486" width="115" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email:" lineBreakMode="tailTruncation" minimumFontSize="10" id="607" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="17" y="567" width="74" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" id="609" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Edit Profile" id="610"/>
+                                </items>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                    <color key="textShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                </textAttributes>
+                                <color key="barTintColor" colorSpace="calibratedRGB" red="0.95294117647058818" green="0.611764705882353" blue="0.070588235294117646" alpha="1"/>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="611" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="16" y="515" width="160" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="612" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="192" y="515" width="167" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="613" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="82" y="563" width="277" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="674" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="84" y="625" width="208" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.95294117647058818" green="0.611764705882353" blue="0.070588235294117646" alpha="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Save Changes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnSaveChanges_TouchUpInside:" destination="600" id="675" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="619" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="ProfileImage">
+                                <rect key="frame" x="71" y="96" width="234" height="213"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="txtBio" destination="551" id="name-outlet-551"/>
+                        <outlet property="lblFirstName" destination="605" id="name-outlet-605"/>
+                        <outlet property="lblLastName" destination="606" id="name-outlet-606"/>
+                        <outlet property="lblEmail" destination="607" id="name-outlet-607"/>
+                        <outlet property="EditProfile" destination="609" id="name-outlet-609"/>
+                        <outlet property="txtFirstName2" destination="611" id="name-outlet-611"/>
+                        <outlet property="txtLastName2" destination="612" id="name-outlet-612"/>
+                        <outlet property="txtEmail2" destination="613" id="name-outlet-613"/>
+                        <outlet property="btnTakePhoto" destination="618" id="name-outlet-618"/>
+                        <outlet property="imgProfile2" destination="619" id="name-outlet-619"/>
+                        <outlet property="btnSaveChanges" destination="674" id="name-outlet-674"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="602" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="152"/>
+        </scene>
+        <scene sceneID="723">
+            <objects>
+                <tableViewController id="724" sceneMemberID="viewController" customClass="CategoryController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="725">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="728" rowHeight="44">
+                                <rect key="frame" x="0.0" y="66" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="728" id="729">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="MaiveCategories" destination="729" id="name-outlet-729"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="724" id="726"/>
+                            <outlet property="delegate" destination="724" id="727"/>
+                        </connections>
+                        <navigationBar contentMode="scaleToFill" id="732" translatesAutoresizingMaskIntoConstraints="NO" key="tableHeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                            <items>
+                                <navigationItem title="Maive Categories" id="733"/>
+                            </items>
+                        </navigationBar>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="730" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365" y="920"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="user_menu_filled-25.png" width="25" height="25"/>
+        <image name="ProfileImage" width="340" height="340"/>
+    </resources>
+</document>
